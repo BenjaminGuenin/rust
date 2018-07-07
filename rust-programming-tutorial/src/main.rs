@@ -3,7 +3,7 @@ fn main() {
     let xr = &x;
     let dom = &x;
     
-    // I am making some changes
+    dom +=1; // Will not work because the reference is not mutable.
 
     println!("x is {}", x);
     println!("x is {}", xr);
