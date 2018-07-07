@@ -6,7 +6,8 @@ struct Color {
 }
 
 fn main() {
-    let bg = Color {red: 255, green: 70, blue: 15};
-    print!("color is {}", bg.red);
-    bg.blue = 45;
+    let mut bg = Color {red: 255, green: 70, blue: 15};
+    print!("color is {}", bg.blue);
+    bg.blue = 45; // impossible, because we need an mutable struct.
+    print!("color is {}", bg.blue);
 }
